@@ -6,8 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safaricom Careers</title>
     <link rel="stylesheet" href="assets/css/style.css">
+  
 </head>
 <body>
+  <style>
+    #preloader {
+      background: #000 url("assets/images/loader.gif") no-repeat center;
+      background-size: 15%;
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+  </style>
+  <div id="preloader">
+  
+  </div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light menu">
       <div class="container">
@@ -30,6 +44,39 @@
         </div>
       </div>
     </nav>
-    <script src="/assets/js/bootstrap.bundle.js"></script>
+   
+          <div class="video-background">
+            <div class="video-wrap">
+              <div id="video">
+                  <video id="bgvid"playsinline autoplay muted loop>
+              <source src="https://www.safaricom.co.ke/careers/wp-content/themes/careers2/assets/videos/homepage.mp4" type="video/mp4">
+            </video>
+              </div>
+            </div>
+          </div>
+          <!-- caption -->
+          <div class="caption">
+          
+            <h1 class="">When we come together <span class="bold">we create amazing opportunities</span></h1>
+            <p class="">Safaricom offers a wide range of careers, whether you’re looking to join our technology, commercial or corporate teams, browse our current vacancies and find out what it’s like to work for an innovative and multicultural organization.</p>
+        <a class="btn btn-success btn-lg">Search and apply</a>
+        </div>
+       
+    
+
+
+
+
+    <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/iJKCj8uAHz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script src="/assets/js/bootstrap.bundle.js">
+    </script>
+    <script>
+      var loader = document.getElementById("preloader");
+  
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
+      </script>
+  
 </body>
 </html>
