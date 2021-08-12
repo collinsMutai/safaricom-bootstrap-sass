@@ -1,0 +1,34 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.job-cards {
+  background: $light;
+  .card {
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    img {
+      transition: all 0.1s ease-in-out;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    .card-body {
+      span {
+        background-color: $primary;
+        width: 2.5rem;
+        height: 2.5rem;
+        i {
+          color: $white;
+          font-size: 1rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}

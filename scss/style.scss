@@ -3,7 +3,10 @@
 
 // import components
 @use 'components/mixins';
+@use 'components/button.scss';
+@use 'components/typography.scss';
 
 // import sections
 @use 'sections/navbar';
 @use 'sections/hero';
+@use 'sections/jobtype';
