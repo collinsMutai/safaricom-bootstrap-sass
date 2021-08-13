@@ -15,6 +15,10 @@
   left: 50%;
   transform: translateY(-50%);
   color: $white;
+  @include media-breakpoint-down(sm) {
+    top: 40%;
+    left: 5%;
+  }
 
   h1 {
     font-size: 3rem;
@@ -23,10 +27,18 @@
     text-shadow: 0.1rem 0.1rem 0.8rem $black;
     padding-bottom: 1rem;
     margin-top: 6rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.5rem;
+    }
   }
 
   .bold {
     font-weight: 900;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.5rem;
+    }
   }
 
   p {
@@ -37,6 +49,10 @@
     letter-spacing: 1px;
     max-width: 74%;
     font-weight: 500;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 0.8rem;
+    }
   }
   a {
     text-transform: uppercase;

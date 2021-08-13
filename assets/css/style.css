@@ -10814,6 +10814,12 @@ textarea.form-control-lg {
   transform: translateY(-50%);
   color: #fff;
 }
+@media (max-width: 575.98px) {
+  .caption {
+    top: 40%;
+    left: 5%;
+  }
+}
 .caption h1 {
   font-size: 3rem;
   font-weight: 400;
@@ -10822,8 +10828,18 @@ textarea.form-control-lg {
   padding-bottom: 1rem;
   margin-top: 6rem;
 }
+@media (max-width: 575.98px) {
+  .caption h1 {
+    font-size: 1.5rem;
+  }
+}
 .caption .bold {
   font-weight: 900;
+}
+@media (max-width: 575.98px) {
+  .caption .bold {
+    font-size: 1.5rem;
+  }
 }
 .caption p {
   font-size: 1rem;
@@ -10833,6 +10849,11 @@ textarea.form-control-lg {
   letter-spacing: 1px;
   max-width: 74%;
   font-weight: 500;
+}
+@media (max-width: 575.98px) {
+  .caption p {
+    font-size: 0.8rem;
+  }
 }
 .caption a {
   text-transform: uppercase;
